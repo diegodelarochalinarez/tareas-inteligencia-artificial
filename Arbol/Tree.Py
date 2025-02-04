@@ -1,6 +1,5 @@
 from Node import Node
 
-
 class Tree:
     
     def __init__(self, root = None):
@@ -19,7 +18,6 @@ class Tree:
         else:
             self.root = Node(valor)
         self.size += 1
-        
     def _add(self, valor, node):
         if valor < node.valor:
             if node.hasLeft():
@@ -31,29 +29,30 @@ class Tree:
                 self._add(valor, node.right)
             else:
                 node.right = Node(valor, parent = node)
-    
-    def inorder(self):
+
+    def find(self, valor):
         if self.root:
-            self._inorder(self.root)
+            return self._find(valor, self.root)
+        else:
+            return None
+        
+    def _find(self, valor, node):
+        print(node.valor)
+        if not node:
+            return None
+        elif node.valor == valor:
+            return node
+        elif valor < node.valor:
+            return self._find(valor, node.left)
+        else:
+            return self._find(valor, node.right)
+        
+    def print(self):
+        if self.root:
+            self._print(self.root)
     
-    def _inorder(self, node):
+    def _print(self, node):
         if node:
-            self._inorder(node.left)
+            self._print(node.left)
             print(node.valor)
-            self._inorder(node.right)
-    
-    def search(self, valor):
-        if self.root:
-            return self._search(valor, self.root)
-        else:
-            return False
-    
-    def _search(self, valor, node):
-        if valor == node.valor:
-            return True
-        elif valor < node.valor and node.hasLeft():
-            return self._search(valor, node.left)
-        elif valor > node.valor and node.hasRight():
-            return self._search(valor, node.right)
-        else:
-            return False
+            self._print(node.right)
