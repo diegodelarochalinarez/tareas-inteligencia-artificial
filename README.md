@@ -19,3 +19,6 @@ En esta tarea se realizó un resumen y una presentación de los temas mencionado
 
 [**Tarea 3: Sistemas de recomendación**](https://github.com/diegodelarochalinarez/tareas-inteligencia-artificial/tree/main/Tarea%203%20Sistemas%20de%20recomendacion) <br/>
 En esta tarea se realizó una investigación sobre las tecnologías que hacen posible el funcionamiento de los sistemas de recomendación, tanto frameworks, lenguajes y bibliotecas. 
+
+[**Tarea 4: Agentes deliberativos**](https://github.com/diegodelarochalinarez/tareas-inteligencia-artificial/tree/main/Tarea%204%20Agentes%20deliberativos) <br/>
+En esta tarea se realizó una investigación sobre los agentes deliberativos, incluyendo definición, características y ejemplos reales de empresas con este tipo de agentes.
