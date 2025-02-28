@@ -22,3 +22,6 @@ En esta tarea se realizó una investigación sobre las tecnologías que hacen po
 
 [**Tarea 4: Agentes deliberativos**](https://github.com/diegodelarochalinarez/tareas-inteligencia-artificial/tree/main/Tarea%204%20Agentes%20deliberativos) <br/>
 En esta tarea se realizó una investigación sobre los agentes deliberativos, incluyendo definición, características y ejemplos reales de empresas con este tipo de agentes.
+
+[**Tarea 5: Puzzle 8**](https://github.com/diegodelarochalinarez/tareas-inteligencia-artificial/tree/main/Tarea%204%20Agentes%20deliberativos) <br/>
+En esta tarea se realizó un ejemplo en python de la resolución del juego Puzzle 8 con el uso de BFS
