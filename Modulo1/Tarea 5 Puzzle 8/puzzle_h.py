@@ -46,6 +46,8 @@ def resolver(inicial, x, y, final):
         min_nodo = min(pq, key=lambda n: n.costo + n.profundidad)
         pq.remove(min_nodo)
 
+        imprimir_tablero(min_nodo.tablero)
+                
         if min_nodo.costo == 0:
             imprimir_ruta(min_nodo)
             return
@@ -63,13 +65,15 @@ def resolver(inicial, x, y, final):
                 hijo = Nodo(min_nodo, nuevo_tab, nueva_x, nueva_y, min_nodo.profundidad + 1)
                 hijo.costo = calcular_costo(hijo.tablero, final)
                 pq.append(hijo)
+        max_nodo = max(pq, key=lambda n: n.costo + n.profundidad)
+        pq.remove(max_nodo)
 
 if __name__ == '__main__':
     
-    tablero = [[8,4,3],[2,0,1],[6,5,7]]
+    tablero = [[1,0,3],[4,8,7],[2,6,5]]
     solucion = [[1, 2, 3], [4, 5, 6], [7, 8, 0]]
 
-    x, y = 2, 2
+    x, y = 1, 0
 
     resolver(tablero, x, y, solucion)
         
