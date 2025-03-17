@@ -32,3 +32,7 @@ En esta tarea se realizó un ejemplo en python de la resolución del juego Puzzl
 
 [**Tarea 1: Paradigmas de la IA**](https://github.com/diegodelarochalinarez/tareas-inteligencia-artificial/tree/main/Modulo2/Tarea%201) <br/>
 En esta tarea se realizó una investigación sobre los paradigmas de la IA, incluyendo ejemplos practicos, descripción, relación con el paradigma al que pertenece y una tabla comparativa del modelo cognitivo con el modelo de adquisición de conocimiento.
+
+[**Tarea 2: Red semantica**](https://github.com/diegodelarochalinarez/tareas-inteligencia-artificial/tree/main/Modulo2/Tarea%202) <br/>
+En este trabajo se presenta una red semántica para el negocio de un banco
+
