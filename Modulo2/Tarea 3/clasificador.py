@@ -18,7 +18,7 @@ features = vectorizer.fit_transform(data["text"])  # Entrada: strings, no listas
 results = data["target"]
 
 features_train, features_test, results_train, results_test = train_test_split(
-    features, results, test_size=0.2
+    features, results, test_size=0.3
 )
 
 from sklearn.naive_bayes import MultinomialNB
