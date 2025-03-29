@@ -23,9 +23,11 @@ features_train, features_test, results_train, results_test = train_test_split(
 
 from sklearn.naive_bayes import MultinomialNB
 
-model = MultinomialNB()
+model = MultinomialNB(alpha=0.01)
 model.fit (features_train, results_train)
 
 results_pred = model.predict(features_test)
 
 print("Predicciones: ",accuracy_score(results_test, results_pred))
+
+print(model.get_params())
