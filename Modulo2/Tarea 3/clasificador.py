@@ -13,12 +13,12 @@ data["text"] = data["text"].str.replace("\s+", " ", regex=True)
 data["text"] = data["text"].str.strip()
 
 # Vectorización
-vectorizer = TfidfVectorizer(stop_words="english")  # Tokenización automática incluida
-features = vectorizer.fit_transform(data["text"])  # Entrada: strings, no listas
+vectorizer = TfidfVectorizer(stop_words="english")  
+features = vectorizer.fit_transform(data["text"])  
 results = data["target"]
 
 features_train, features_test, results_train, results_test = train_test_split(
-    features, results, test_size=0.3
+    features, results, test_size=0.25
 )
 
 from sklearn.naive_bayes import MultinomialNB

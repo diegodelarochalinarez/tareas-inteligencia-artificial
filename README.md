@@ -36,3 +36,32 @@ En esta tarea se realizó una investigación sobre los paradigmas de la IA, incl
 [**Tarea 2: Red semantica**](https://github.com/diegodelarochalinarez/tareas-inteligencia-artificial/tree/main/Modulo2/Tarea%202) <br/>
 En este trabajo se presenta una red semántica para el negocio de un banco
 
+[**Tarea 3: Clasificador de Spam**](https://github.com/diegodelarochalinarez/tareas-inteligencia-artificial/tree/main/Modulo2/Tarea%203) <br/>
+En este trabajo se crea un clasificador de correos de spam y no spam usando el metodo de clasificación por probabilidad con multinomial Naive Bayes, Las primeras lineas se tratan de la división de los datos, se estandariza el texto en minusculas, se eliminan caracteres especiales, se eliminan espacios multiples y spacios en el inicio y final del codigo. Se usan distintas funciones y clases de sklearn, como el tdfiVectorizer para obtener las palabras en tokens, traintestsplit para separar nuestro dataset en una parte de pruebas y otra de tes y accuracy_score para medir la precisión de predicción de correo.<br>
+```
+data = pd.read_csv("Modulo2/Tarea 3/spam_assassin.csv")
+
+# Preprocesamiento
+data["text"] = data["text"].str.lower()
+data["text"] = data["text"].str.replace("[^a-zA-Z0-9]", " ", regex=True)  
+data["text"] = data["text"].str.replace("\s+", " ", regex=True) 
+data["text"] = data["text"].str.strip()
+
+# Vectorización
+vectorizer = TfidfVectorizer(stop_words="english")  
+features = vectorizer.fit_transform(data["text"])  
+results = data["target"]
+
+features_train, features_test, results_train, results_test = train_test_split(
+    features, results, test_size=0.25
+)
+```
+<br>
+El modelo de clasificación por probabilidad Multinomial Naive Bayes
+consiste en calcular la probabilidad de que un documento sea spam, multiplicando la probabilidad de que los archivos pasados que contenian cierta palabra y que eran spam, exponenciado a la cantidad de veces que aparece esa palabra por la probabilidad de que un documento sea spam dado por el bloque de entrenamiento
+<br>
+
+```
+model = MultinomialNB(alpha=0.01)
+model.fit (features_train, results_train)
+```
