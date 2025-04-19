@@ -65,3 +65,8 @@ consiste en calcular la probabilidad de que un documento sea spam, multiplicando
 model = MultinomialNB(alpha=0.01)
 model.fit (features_train, results_train)
 ```
+
+## MODULO 3
+
+[**Tarea 1: Definición del sistema experto**](https://github.com/diegodelarochalinarez/tareas-inteligencia-artificial/blob/main/Modulo3/Tarea1/Definición%20del%20sistema%20experto.pdf) <br/>
+En este documento se define el problema a resolver con un sistema experto, así como sus objetivos y fuentes de información.
