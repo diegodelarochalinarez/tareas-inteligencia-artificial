@@ -73,3 +73,8 @@ En este documento se define el problema a resolver con un sistema experto, así 
 
 [**Tarea 2: Diagrama de inferencia y reglas del sistema experto**](https://github.com/diegodelarochalinarez/tareas-inteligencia-artificial/tree/main/Modulo3/Tarea%202%20Diagrama%20y%20reglas%20del%20Sistema%20experto) <br/>
 En este documento se definen las reglas y el diagrama de inferencia que se utilizarán para la construcción del sistema experto para el apoyo de tramites del tecnológico de culiacán
+
+## MODULO 4
+
+[**Tarea 1: Preprocesamiento del dataset para vision artificial**](https://github.com/diegodelarochalinarez/tareas-inteligencia-artificial/tree/main/Modulo3/Tarea%202%20Diagrama%20y%20reglas%20del%20Sistema%20experto) <br/>
+En este documento se añade un link donde se encuentra el dataset de imagenes y se detallan formas de como realizar el preprocesamiento de imagenes.
