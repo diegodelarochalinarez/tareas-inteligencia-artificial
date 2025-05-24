@@ -76,5 +76,5 @@ En este documento se definen las reglas y el diagrama de inferencia que se utili
 
 ## MODULO 4
 
-[**Tarea 1: Preprocesamiento del dataset para vision artificial**](https://github.com/diegodelarochalinarez/tareas-inteligencia-artificial/tree/main/Modulo3/Tarea%202%20Diagrama%20y%20reglas%20del%20Sistema%20experto) <br/>
+[**Tarea 1: Preprocesamiento del dataset para vision artificial**](https://github.com/diegodelarochalinarez/tareas-inteligencia-artificial/blob/main/Modulo4/Tarea%201.pdf) <br/>
 En este documento se añade un link donde se encuentra el dataset de imagenes y se detallan formas de como realizar el preprocesamiento de imagenes.
