@@ -78,3 +78,6 @@ En este documento se definen las reglas y el diagrama de inferencia que se utili
 
 [**Tarea 1: Preprocesamiento del dataset para vision artificial**](https://github.com/diegodelarochalinarez/tareas-inteligencia-artificial/blob/main/Modulo4/Tarea%201.pdf) <br/>
 En este documento se añade un link donde se encuentra el dataset de imagenes y se detallan formas de como realizar el preprocesamiento de imagenes.
+
+[**Tarea 2: Modelo de visión artificial**](https://github.com/diegodelarochalinarez/tareas-inteligencia-artificial/tree/main/Modulo4/Tarea2) <br/>
+Agregado de los scripts en python para el entrenamiento del modelo, las imagenes de los resultados de la validación del modelo y el reporte en pdf de la tarea.
